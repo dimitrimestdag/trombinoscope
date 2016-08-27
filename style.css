@@ -1,0 +1,111 @@
+﻿body									/* On travaille sur la balise body, donc sur TOUTE la page */
+{
+    background-color: #4D4D73; 		/* Le fond de la page sera bleu */
+    color: white; 					/* Le texte de la page sera blanc */
+	background-image:  url("images/huriez1.jpg");
+	background-attachment: fixed; 	/* fixed ou scroll */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+h1									/* Titre h1 */
+{
+	font-size: 32px;				/* taille paragraphes (x-small,small,medium,large,x-large,32px) */
+    color: blue;
+	border: 2px outset blue;		/* taille cadre */
+	margin : auto;
+	text-align: center;
+
+}
+a 									/* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: red;
+   font-style: italic;
+}
+
+a:hover 								/* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: green;
+}
+.intro{
+	text-align: center;
+}
+table{
+	border-collapse: collapse; 		/* Les bordures du tableau seront collées */
+	margin: auto;
+}
+
+td 									/* Toutes les cellules des tableaux... */
+{
+    border: 1px solid black; 		/* auront une bordure de 1px */
+
+}
+.lien{
+	text-align: center;
+}
+.sansbordure						/* Liens vers page 1, page 2, ... */
+{
+	border: 0;
+}
+#onglets{
+	display: none;
+}
+#onglets li{
+	position: relative;
+	float: left;
+	list-style: none;
+	padding: 2px 5px 7px;
+	margin-right: 5px;
+	border: 1px solid #1175AE;
+	cursor: pointer;
+	background-color: #EEEEEE;
+	color: #0D5995;
+	z-index: 1;
+	margin-left: 3%;
+}
+#onglets .actif{
+	border-bottom: none;
+	font-weight: bold;
+	z-index: 10;
+}
+#contenu{
+	clear: both;
+	position: relative;
+	margin: 10px;
+	padding: 10px;
+	border: 5px solid #0D5995;
+	z-index: 5;
+	top: -6px;
+	background-color: #EEEEEE;
+	color: #0F67A1;
+	width: 95%;
+	overflow: hidden;
+	border-radius: 15px;
+}
+#search{
+	border: 2px solid #1175AE;
+}
+iframe{
+    margin: 0 auto;
+	display: block;
+}
+.bouton {
+	background-color: #EEEEEE;
+	border: 2px solid #1175AE;
+}
+.encadrement{
+	border: 2px solid #1175AE;
+	background-color: #EEEEEE;
+	color: #0F67A1;
+	padding: 3px;
+}
+.bouton:hover{
+	background-color: #0F67A1;
+	color: #EEEEEE;
+	border: 2px solid #EEEEEE;
+}
+.eperso{
+	font-size= 2px;
+	font-family= verdana;
+}
